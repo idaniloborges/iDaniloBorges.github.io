@@ -23,7 +23,10 @@
 
 body{
   font-family: "Fira Sans", serif;
+  margin: 0;
+  padding: 0;
 }
+
 h1, h2, h3, p{
   margin: 0;
 }
@@ -68,4 +71,10 @@ a{
     text-transform: capitalize;
     max-width: initial !important;
   }
+}
+
+.github-corner{
+  margin: 0;
+  padding: 0;
+  gap: 0;
 }
