@@ -1,25 +1,8 @@
-@import "header.css";
-@import "experiencia.css";
-@import "formacao.css";
-@import "footer.css";
-
-:root{
-  /*  Tipografia  */
-  
-  
-  /*  Cores */
-
-  /*  header  */
-  --cor1: #141414;
-  --cor2: #f5f5f5;
-
-  /*  experiência */
-  --cor3: #e0e0e0;
-  --cor4: #525252;
-
-  /*  formação  */
-
-}
+@import "/css/header.css";
+@import "/css/experiencia.css";
+@import "/css/formacao.css";
+@import "/css/footer.css";
+@import "/css/cores.css";
 
 body{
   font-family: "Fira Sans", serif;
@@ -77,4 +60,15 @@ a{
   margin: 0;
   padding: 0;
   gap: 0;
+}
+
+.js-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s ease;
+}
+
+.js-scroll.ativo {
+  opacity: 1;
+  transform: translateY(0);
 }

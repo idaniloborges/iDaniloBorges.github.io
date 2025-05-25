@@ -39,7 +39,7 @@
   display: block;
   width: 4px;
   height: 20px;
-  background: linear-gradient(#b6f829, #67dd0a);
+  background: linear-gradient(var(--cor-secundaria), var(--cor-primaria));
   position: absolute;
   top: 20px;
   left: -4px;
@@ -59,6 +59,13 @@
   font-size: 1.125rem;
   line-height: 1.1;
   font-weight: bold;
+  transition: .5s ease;
+  padding: 0;
+}
+
+.empresa-titulo:hover{
+  transform: scale(1.05);
+  color: var(--cor-secundaria);
 }
 
 .empresa-texto{
@@ -78,7 +85,7 @@
   font-size: 0.875rem;
   line-height: 1.4;
   border-radius: 4px;
-  background: #ffffff;
+  background: var(--cor5);
 }
 
 @media (max-width: 800px){

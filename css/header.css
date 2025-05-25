@@ -1,11 +1,34 @@
+body{
+  position: relative;
+}
+
+body::before{
+  content: "";
+  background-image: url("/img/marca-superior.svg");
+  height: 500px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#logo{
+  height: 100px;
+}
+
 .header{
   max-width: 1200px;
   padding: 40px 20px;
   margin: 0 auto;
+  margin-bottom: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
+.itamara{
+  height: 2000px;
 }
 
 .header-menu{
@@ -15,14 +38,15 @@
 }
 
 .header-menu li a {
-  background: #141414;
-  color: #f5f5f5;
+  background: var(--cor1);
+  color: var(--cor2);
   border-radius: 4px;
+  transition: .2s ease;
 }
 
 .header-menu li a:hover{
-  background: #f5f5f5;
-  color: #141414;
+  background: var(--cor-principal);
+  /* color: var(--cor1); */
   border-radius: 4px;
 }
 
@@ -46,10 +70,12 @@
   max-width: 1200px;
   padding: 40px 20px;
   margin: 0 auto;
+  margin-bottom: 200px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  /* grid-template-columns: 1fr 2fr; */
   gap: 100px;
   align-items: center;
+  text-align: center;
 }
 
 .introducao h1{
@@ -57,23 +83,44 @@
   line-height: 1.125;
   margin-bottom: 2rem;
   position: relative;
+  height: 200px;
+  font-family: "Libre Baskerville";
+  font-weight: 700 !important;
+  /* text-align: start; */
 }
 
-.introducao h1::before{
+.introducao h1::after{
   content: "";
-  display: block;
-  width: 130px;
-  height: 100px;
-  background: url("../img/detalhe.svg") no-repeat center;
-  position: absolute;
-  top: -15px;
-  left: -40px;
-  z-index: -1;
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 2px;
+  margin-top: 30px;
+  text-align: center;
+  justify-self: center;
+  background: var(--cor-principal);
+
 }
 
 .introducao p{
-  font-size: 1.5rem;
-  color: #525252;
+  font-size: 2rem;
+  color: var(--cor4);
+}
+
+button{
+  margin-top: 30px;
+  padding: 10px 40px;
+  font-size: 2rem;
+  font-family: "Fira Sans", serif;
+  border: none;
+  background: var(--cor1);
+  color: var(--cor2);
+  border-radius: 4px;
+  transition: .2s ease;
+}
+
+button:hover{
+  background: var(--cor-principal);
 }
 
 @media (max-width: 1000px){
@@ -84,7 +131,6 @@
 
 @media (max-width: 800px){
   .introducao{
-    grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
   .introducao h1{
@@ -108,3 +154,29 @@
     font-size: 1.125rem;
   }
 }
+
+    .introducao h1{
+      /* align-items: center; */
+      white-space: pre-wrap; /* permite quebra de linha natural */
+      word-break: break-word; /* quebra palavras longas se necessário */
+      font-weight: 500;
+    }
+    
+    #cursor {
+      display: inline;
+      animation: blink 0.7s steps(1) infinite;
+      /* width: 1px; */
+      /* background: black; */
+      /* height: 1em; */
+      /* margin-left: 2px; */
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    #marca-superior{
+      height: 200px;
+      
+    }

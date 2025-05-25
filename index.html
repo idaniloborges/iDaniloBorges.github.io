@@ -3,22 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Danilo Borges - Desenvolvedor Front-End & UX/UI Designer</title>
+  
   <meta name="description" content="Desenvolvedor  Front End & UX/UI Designer - Localizado em Guarulhos">
+
   <link rel="stylesheet" href="css/global.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
+
 </head>
 
 <body>
   <a href="https://github.com/iDaniloBorges" target="_blank" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+  <!-- <img src="img/marca-superior.svg" alt="" id="marca-superior"> -->
   <header class="header">
-    
-    <h1>Danilo Borges</h1>
-    <nav>
+    <img src="img/marca.svg" alt="" id="logo">
+    <nav class="js-menu">
       <ul class="header-menu">
         <li><a href="#experiencia">Experiência</a></li>
         <li><a href="#formacao">Formação</a></li>
@@ -28,23 +37,29 @@
   </header>
 
   <main class="introducao">
-    <img src="img/perfil.jpg" alt="foto-perfil" width="360" height="520">
+    <!-- <img src="img/perfil.jpg" alt="foto-perfil" width="360" height="520"> -->
     <div>
-      <h1>Desenvolvedor <br> Front End & <br>UX/UI Designer</h1>
-      <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+      <div id="titulo-container">
+        <h1><span id="titulo"></span><span id="cursor">|</span></h1>
+        <p>Cada linha de código é uma ponte entre ideias e soluções.</p>
+        <!-- <button>SAIBA MAIS</button> -->
+      </div>
+      <!-- <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
         <path d="M12 2C8.13 2 5 5.13 5 8.5C5 10.83 6.29 13.34 8.26 15.3C9.16 16.3 10.47 17.58 12 18.88C13.53 17.58 14.84 16.3 15.74 15.3C17.71 13.34 19 10.83 19 8.5C19 5.13 15.87 2 12 2ZM12 13C10.34 13 9 11.66 9 10C9 8.34 10.34 7 12 7C13.66 7 15 8.34 15 10C15 11.66 13.66 13 12 13Z" fill="black"/>
-      </svg> Localizado em Guarulhos</p>
+      </svg> Localizado em Guarulhos</p> -->
     </div>
   </main>
 
-  <section class="experiencia" id="experiencia" aria-label="Experiência">
+  
+
+  <section class="experiencia js-scroll" id="experiencia" aria-label="Experiência">
     <h2 class="subtitulo">Experiência</h2>
     <div>
       <p class="experiencia-texto">Desenvolvo projetos para web e aplicativos utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>React</strong> e <strong>React Native</strong>.</p>
     
       <div class="empresa">
-        <span class="empresa-ano">2025</span>
-        <h3 class="empresa-titulo">Website Naiana Geronimo Advogada</h3>
+        <span class="empresa-ano">05/2025</span>
+        <a href="https://naianageronimoadvocacia.vercel.app/" target="_blank" class="empresa-titulo">Website Naiana Geronimo Advogada</a>
         <span class="empresa-titulo">Desenvolvedor</span>
         <p class="empresa-texto">Projeto realizado para criar um site profissional e funcional para uma advogada, com o objetivo de promover seus serviços jurídicos e facilitar o contato com clientes potenciais.</p>
         <ul class="empresa-habilidades">
@@ -56,7 +71,7 @@
       </div>
       <div class="empresa">
         <span class="empresa-ano">2025</span>
-        <h3 class="empresa-titulo">Website Consultório Érika Borges</h3>
+        <a href="" target="_blank" class="empresa-titulo">Website Consultório Érika Borges</a>
         <span class="empresa-titulo">Desenvolvedor</span>
         <p class="empresa-texto">Neste projeto, fui responsável pela criação de um site funcional para um consultório odontológico, com o objetivo de apresentar os serviços oferecidos, melhorar a visibilidade online e facilitar o agendamento de consultas online.</p>
         <ul class="empresa-habilidades">
@@ -69,31 +84,32 @@
 
     </div>
   </section>
-  <section class="formacao" id="formacao" aria-label="Formação">
+  <section class="formacao js-scroll" id="formacao" aria-label="Formação">
     <div class="formacao-container">
       <h2 class="subtitulo">Formação</h2>
       
       <div>
         <p class="formacao-texto">
-          Minha experiência acadêmica provém de minha <strong>graduação</strong> 🎓 em <strong>Engenharia</strong>  e <strong>tecnólogo</strong>  em <strong>Análise e Desenvolvimento de Sistemas</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online sobre linguagens de programação e frameworks.
+          Sou desenvolvedor front-end com formação em <strong>Engenharia</strong> e tecnólogo em <strong>Análise e Desenvolvimento de Sistemas</strong>. Minha base acadêmica sólida em lógica e resolução de problemas me permite criar interfaces intuitivas e funcionais. Estou sempre atualizado com cursos intensivos em linguagens de programação e frameworks modernos, buscando aprimorar minhas habilidades e oferecer soluções digitais que aliam estética, usabilidade e performance, com foco na experiência do usuário.
+          
         </p>
 
         <ul class="faculdade-lista">
-          <li class="faculdade">
+          <!-- <li class="faculdade">
             <span class="faculdade-tipo">graduação</span>
             <h3 class="faculdade-curso">Ciência da Computação</h3>
             <span class="faculdade-instituicao">UNICSUL</span>
-          </li>
+          </li> -->
 
           <li class="faculdade">
             <span class="faculdade-tipo">Tecnólogo</span>
-            <h3 class="faculdade-curso">Análise e Desenvolvimento de Sistemas</h3>
+            <h3 class="faculdade-curso"><a href="pdf/Análise-e-desenolvimento-de-sistemas.pdf" target="_blank">Análise e Desenvolvimento de Sistemas</a></h3>
             <span class="faculdade-instituicao">UNICSUL</span>
           </li>
           
           <li class="faculdade">
             <span class="faculdade-tipo">Bacharel</span>
-            <h3 class="faculdade-curso">Engenharia de Produção</h3>
+            <h3 class="faculdade-curso"><a href="pdf/Diploma-de-engenharia.pdf" target="_blank">Engenharia de Produção</a></h3>
             <span class="faculdade-instituicao">USJT</span>
           </li>
         </ul>
@@ -111,7 +127,7 @@
           <div class="idiomas">
             <h3>Idiomas</h3>
             <ul>
-              <li>Inglês <span>/ Intermediário</span></li>
+              <li>Inglês <span></span></li>
             </ul>
           </div>
         </div>
@@ -121,17 +137,26 @@
   <footer class="footer" id="contato">
     <div class="footer-container">
       <p class="footer-texto">
-        Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋
+        Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa.
       </p>
         <ul class="footer-contato">
-          <li class="footer-contato-email">idaniloborges@gmail.com</li>
-          <li>+55 11 95592-7257</li>
-          <li><a href="pdf/Danilo Borges Santos TI.pdf" target="_blank">Currículo</a></li>
-          <li><a href="https://www.linkedin.com/in/danilo-borges-desenvolvedor-frontend-backend-engenheiro/" target="_blank">Linkedin</a></li>
           <li><a href="https://github.com/iDaniloBorges" target="_blank">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/danilo-borges-desenvolvedor-frontend-backend-engenheiro/" target="_blank">Linkedin</a></li>
+          <li><a href="pdf/Currículo.pdf" target="_blank">Currículo</a></li>
+          <li><a href="https://wa.me/5511955927257?text=Olá! Tenho uma dúvida." target="_blank">(11) 95592-7257</a></li>
+          <li class="footer-contato-email"><a href="mailto:idaniloborges@gmail.com">idaniloborges@gmail.com</a></li>
         </ul>
-        <p class="footer-copy">&copy; Danilo Borges</p>
+        <p class="footer-copy">&copy; 2025 - Danilo Borges | Desenvolvedor Front-End & UX/UI Designer
+          <br>Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <a href="https://wa.me/5511955927257?text=Olá! Tenho uma dúvida." 
+    target="_blank" 
+    style="position:fixed;bottom:20px;right:30px;"> 
+    <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg> 
+    </a>
+
+  <script src="/js/script.js"></script>
 </body>
 </html>

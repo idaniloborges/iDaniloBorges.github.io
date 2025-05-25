@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cursor Funcionando</title>
+  <style>
+    h1 {
+      font-family: monospace;
+      font-size: 24px;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    #cursor {
+      display: inline;
+      animation: blink 0.7s steps(1) infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1><span id="titulo"></span><span id="cursor">|</span></h1>
+
+  <script>
+    const textoCompleto = "Desenvolvedor Front End & UX/UI Designer";
+    const elementoTexto = document.getElementById("titulo");
+    let index = 0;
+
+    function escreverTexto() {
+      if (index < textoCompleto.length) {
+        elementoTexto.textContent += textoCompleto.charAt(index);
+        index++;
+        setTimeout(escreverTexto, 100);
+      }
+    }
+
+    escreverTexto();
+  </script>
+
+</body>
+</html>
