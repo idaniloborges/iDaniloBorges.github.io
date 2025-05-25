@@ -67,10 +67,7 @@ body::before{
   padding: 40px 20px;
   margin: 0 auto;
   margin-bottom: 200px;
-  display: grid;
-  /* grid-template-columns: 1fr 2fr; */
   gap: 100px;
-  align-items: center;
   text-align: center;
 }
 
@@ -82,16 +79,14 @@ body::before{
   height: 300px;
   font-family: "Libre Baskerville";
   font-weight: 700 !important;
-  justify-items: center;
 }
 
 .introducao h1::after{
   content: "";
-  position: relative;
-  display: grid;
+  display: block;
   width: 300px;
   height: 2px;
-  margin-top: 30px;
+  margin: 30px auto 0 auto;
   background: var(--cor-principal);
 }
 
@@ -148,7 +143,7 @@ button:hover{
 
 @media (max-width: 450px){
   .header{
-    margin-bottom: 120px;
+    margin-bottom: 150px;
   }
   .header-menu{
     flex-wrap: nowrap !important;
