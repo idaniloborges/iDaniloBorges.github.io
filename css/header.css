@@ -83,7 +83,7 @@ body::before{
   line-height: 1.125;
   margin-bottom: 2rem;
   position: relative;
-  height: 200px;
+  height: 300px;
   font-family: "Libre Baskerville";
   font-weight: 700 !important;
   /* text-align: start; */
@@ -124,17 +124,27 @@ button:hover{
 }
 
 @media (max-width: 1000px){
+  .introducao{
+    margin-bottom: 100px;
+  }
   .introducao h1{
     font-size: 3rem;
+    height: 200px;
   }
 }
 
 @media (max-width: 800px){
   .introducao{
-    gap: 40px;
+    margin-bottom: 200px;
+
   }
   .introducao h1{
+    height: 100px;
     font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  .introducao p{
+    font-size: 1.5rem;
   }
   .introducao h1::before{
     width: 30px;
@@ -144,8 +154,12 @@ button:hover{
 }
 
 @media (max-width: 400px){
+  .header{
+    margin-bottom: 120px;
+  }
   .introducao{
     grid-template-columns: 1fr;
+    margin-bottom: 100px;
   }
   .introducao img{
   display: none;
