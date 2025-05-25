@@ -82,19 +82,17 @@ body::before{
   height: 300px;
   font-family: "Libre Baskerville";
   font-weight: 700 !important;
-  /* text-align: start; */
+  justify-items: center;
 }
 
 .introducao h1::after{
   content: "";
   position: relative;
-  display: inline-flex;
+  display: grid;
   width: 300px;
   height: 2px;
   margin-top: 30px;
-  text-align: center;
   background: var(--cor-principal);
-
 }
 
 .introducao p{
@@ -148,13 +146,13 @@ button:hover{
   }
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
   .header{
     margin-bottom: 120px;
   }
   .header-menu li a{
-    font-size: 1rem;
-    padding: 10px 15px;
+    font-size: .875rem;
+    padding: 5px 10px;
   }
   .introducao{
     grid-template-columns: 1fr;
