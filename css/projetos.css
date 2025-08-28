@@ -1,0 +1,77 @@
+.projetos-bg {
+  background: var(--cor3);
+}
+
+.projetos-bg h2 {
+  color: white;
+}
+
+.secao-projetos p{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.projetos {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin; /* auto | thin | none */
+  scrollbar-color: var(--cor-principal) var(--cor3); /* cor do thumb | cor do track */
+  scroll-padding: 20px;
+  /* -ms-overflow-style: -ms-autohiding-scrollbar; */
+}
+
+.projetos:hover {
+  scrollbar-color: var(--cor-secundaria) var(--cor3);
+}
+
+.projetos::-webkit-scrollbar {
+  height: 8px; /* altura da barra (horizontal) */
+}
+.projetos::-webkit-scrollbar-track {
+  background: var(--cor3); /* fundo */
+  border-radius: 10px;
+}
+.projetos::-webkit-scrollbar-thumb {
+  background: var(--cor-principal);
+  border-radius: 10px;
+}
+.projetos::-webkit-scrollbar-thumb:active {
+  background: var(--cor-principal); /* cor quando clicado */
+}
+
+.projetos-container {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.projetos-container a {
+  padding: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.projetos-container a::after {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.projetos-container a:hover::after {
+  opacity: 0.5; /* aqui funciona */
+}
+.projetos-container img {
+  width: 340px;
+  height: 450px;
+  /* object-fit: cover; */
+  transition: transform 0.3s ease-in-out;
+}
+
+.projetos-container img:hover {
+  transform: scale(1.05);
+}

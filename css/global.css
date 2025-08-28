@@ -1,62 +1,66 @@
+@import "/css/cores.css";
 @import "/css/header.css";
 @import "/css/experiencia.css";
+@import "/css/projetos.css";
 @import "/css/formacao.css";
 @import "/css/footer.css";
-@import "/css/cores.css";
 
-body{
+body {
   font-family: "Fira Sans", serif;
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, p{
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
-p{
+p {
   font-size: 1.125rem;
 }
 
-ul{
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-a{
+a {
   text-decoration: none;
   color: var(--cor1);
   padding: 10px 20px;
   display: block;
 }
 
-.subtitulo{
+.subtitulo {
   font-size: 8rem;
   line-height: 1;
   text-transform: uppercase;
   word-break: break-all;
 }
 
-.experiencia .subtitulo{
+.experiencia .subtitulo {
   max-width: 4ch;
 }
 
-@media (max-width: 800px){
-  .subtitulo{
+@media (max-width: 800px) {
+  .subtitulo {
     font-size: 3rem;
     text-transform: capitalize;
     max-width: initial !important;
   }
 }
 
-.github-corner{
+.github-corner {
   margin: 0;
   padding: 0;
   gap: 0;
@@ -71,4 +75,14 @@ a{
 .js-scroll.ativo {
   opacity: 1;
   transform: translateY(0);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
 }

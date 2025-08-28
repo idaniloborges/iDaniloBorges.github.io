@@ -2,15 +2,7 @@
   background: var(--cor1);
   color: var(--cor5);
 }
-.formacao-container{
-  max-width: 1200px;
-  padding: 120px 20px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 100px;
-  position: relative;
-}
+
 
 .formacao-container::after{
   content: "";
