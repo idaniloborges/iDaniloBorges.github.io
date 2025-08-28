@@ -6,7 +6,7 @@
   color: white;
 }
 
-.secao-projetos p{
+.secao-projetos p {
   text-align: center;
   font-weight: bold;
   margin-top: 20px;
@@ -70,6 +70,7 @@
   height: 450px;
   /* object-fit: cover; */
   transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 10px 2px black;
 }
 
 .projetos-container img:hover {
