@@ -87,3 +87,9 @@ a {
   gap: 100px;
   position: relative;
 }
+
+@media (max-width: 800px) {
+  #icone-github {
+    display: none;
+  }
+}

@@ -3,6 +3,16 @@
   color: var(--cor5);
 }
 
+.formacao-container {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+
 
 .formacao-container::after{
   content: "";
@@ -147,6 +157,7 @@
   .formacao .subtitulo{
     color: var(--cor5);
     max-width: 4ch;
+    margin-bottom: 40px;
   }
   .formacao-texto{
     font-size: 1.25rem;
